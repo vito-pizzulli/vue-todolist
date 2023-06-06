@@ -24,12 +24,20 @@ createApp ({
                     text: 'Fare workout',
                     done: false
                 }
-            ]
+            ],
+            toDoTaskNew : ''
         }
     },
     methods: {
         toDoTaskDelete(index) {
             this.toDoList.splice(index, 1);
+        },
+        toDoTaskAdd() {
+            if (this.toDoTaskNew !== '') {
+                taskToAdd = {text: this.toDoTaskNew, done: false};
+                this.toDoList.push(taskToAdd);
+                this.toDoTaskNew = '';
+            }
         }
     }
 }) .mount('#app');

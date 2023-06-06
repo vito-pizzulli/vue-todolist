@@ -31,8 +31,8 @@
                 </li>
             </ul>
             <div class="input-elements">
-                <input type="text">
-                <button>Add Task</button>
+                <input type="text" v-model="toDoTaskNew">
+                <button @click="toDoTaskAdd()">Add Task</button>
             </div>
         </div>
     </div>
