@@ -28,7 +28,7 @@
                 <input type="text" v-model="toDoTaskNew" @keyup.enter="toDoTaskAdd()">
                 <button @click="toDoTaskAdd()">Add New Task</button>
             </div>
-            <ul>
+            <ul v-if="toDoList.length > 0">
                 <li v-for="(toDoTask, index) in toDoList" :class="{ 'task-done' : toDoTask.done }">
                     <span @click="toDoTaskCheck(index)">{{ toDoTask.text }}</span>
                     <span><i class="fa-solid fa-trash-can" @click="toDoTaskDelete(index)"></i></span>
