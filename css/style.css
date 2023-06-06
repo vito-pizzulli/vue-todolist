@@ -29,3 +29,7 @@ div.to-do-list > ul > li {
     padding: 1rem;
     border-radius: 20px;
 }
+
+.text-line-through {
+    text-decoration: line-through;
+}
