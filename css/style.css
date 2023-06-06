@@ -66,7 +66,7 @@ div.to-do-list > ul > li > span:first-of-type {
 }
 
 div.to-do-list > ul > li > span:first-of-type:hover {
-    background-color: rgb(255, 225, 149);
+    background-color: rgba(255, 225, 150, 0.5);
 }
 
 div.to-do-list > ul > li > span > i {
