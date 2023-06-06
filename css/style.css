@@ -21,8 +21,7 @@ div.to-do-list > h1 {
 
 div.to-do-list > ul {
     list-style: none;
-    width: 50%;
-    margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 div.to-do-list > ul > li {
@@ -32,6 +31,7 @@ div.to-do-list > ul > li {
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 div.to-do-list > ul > li > span {
@@ -40,6 +40,41 @@ div.to-do-list > ul > li > span {
 
 div.to-do-list > ul > li > span > i {
     cursor: pointer;
+    transition: all .5s;
+}
+
+div.to-do-list > ul > li > span > i:hover {
+    color: red;
+}
+
+div.to-do-list > ul,
+div.to-do-list > div.input-elements {
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.to-do-list > div.input-elements {
+    display: flex;
+    justify-content: center;
+}
+
+div.to-do-list > div.input-elements > button,
+div.to-do-list > div.input-elements > input {
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 0 1rem;
+    border: 1px solid black;
+}
+
+div.to-do-list > div.input-elements > button {
+    background-color: rgb(255, 225, 149);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+div.to-do-list > div.input-elements > button:hover {
+    background-color: rgb(255, 199, 58);
 }
 
 .task-done {
