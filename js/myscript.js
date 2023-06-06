@@ -38,6 +38,9 @@ createApp ({
                 this.toDoList.push(taskToAdd);
                 this.toDoTaskNew = '';
             }
+        },
+        toDoTaskCheck(index) {
+            this.toDoList[index].done = !this.toDoList[index].done;
         }
     }
 }) .mount('#app');
