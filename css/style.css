@@ -12,6 +12,10 @@
     cursor: default;
 }
 
+div.to-do-list {
+    text-align: center;
+}
+
 div.to-do-list > h1 {
     margin: 2rem;
     text-align: center;
@@ -75,6 +79,13 @@ div.to-do-list > div.input-elements > button {
 
 div.to-do-list > div.input-elements > button:hover {
     background-color: rgb(255, 199, 58);
+}
+
+div.to-do-list > img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .task-done {
