@@ -30,8 +30,9 @@
                     <span><i class="fa-solid fa-trash-can" @click="toDoTaskDelete(index)"></i></span>
                 </li>
             </ul>
+            <h2 v-if="toDoList.length === 0">The list is empty!</h2>
             <div class="input-elements">
-                <input type="text" v-model="toDoTaskNew">
+                <input type="text" v-model="toDoTaskNew" @keyup.enter="toDoTaskAdd()">
                 <button @click="toDoTaskAdd()">Add Task</button>
             </div>
             <img src="img/travolta.gif" alt="John Travolta Gif" v-if="toDoList.length === 0">
