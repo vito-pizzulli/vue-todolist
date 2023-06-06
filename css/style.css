@@ -16,6 +16,12 @@
 div.to-do-list > h1 {
     border: 1px solid black;
     padding: 1rem;
+    font-size: 3rem;
+    background-color: rgb(255, 225, 149);
+}
+
+div.to-do-list > h2 {
+    font-size: 2rem;
 }
 
 div.to-do-list > h1,
@@ -68,7 +74,7 @@ div.to-do-list > ul > li > span > i:hover {
 div.to-do-list > ul,
 div.to-do-list > div.input-elements {
     width: 50%;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 div.to-do-list > div.input-elements {
