@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../img/table.jpg);
+}
+
 #app {
     font-family: 'Open Sans', sans-serif;
     width: 80%;
@@ -14,10 +18,10 @@
 }
 
 div.to-do-list > h1 {
-    border: 1px solid black;
     padding: 1rem;
     font-size: 3rem;
-    background-color: rgb(255, 225, 149);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
 }
 
 div.to-do-list > h2 {
@@ -28,20 +32,24 @@ div.to-do-list > h1,
 div.to-do-list > h2 {
     margin: 2rem;
     text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 div.to-do-list > ul {
     list-style: none;
-    padding-bottom: 2rem;
+    padding: 2rem;
+    background-image: url(../img/paper.jpg);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    color: rgb(50, 50, 50);
 }
 
 div.to-do-list > ul > li {
     margin: .5rem;
-    border: 1px solid black;
-    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgb(50, 50, 50);
 }
 
 div.to-do-list > ul > li > span {
@@ -49,16 +57,16 @@ div.to-do-list > ul > li > span {
     padding: 1rem;
     border-radius: 20px;
     transition: all .5s;
-    cursor: pointer;
 }
 
 div.to-do-list > ul > li > span:first-of-type {
     width: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 div.to-do-list > ul > li > span:first-of-type:hover {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 225, 149);
 }
 
 div.to-do-list > ul > li > span > i {
@@ -88,13 +96,18 @@ div.to-do-list > div.input-elements > input {
     padding: 1rem;
     border-radius: 20px;
     margin: 0 1rem;
-    border: 1px solid black;
+    border: none;
 }
 
 div.to-do-list > div.input-elements > button {
     background-color: rgb(255, 225, 149);
     cursor: pointer;
     transition: all .5s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+div.to-do-list > div.input-elements > input {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 div.to-do-list > div.input-elements > button:hover {
