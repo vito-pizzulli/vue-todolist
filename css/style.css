@@ -48,6 +48,7 @@ div.to-do-list > ul > li > span {
 
 div.to-do-list > ul > li > span:first-of-type {
     width: 100%;
+    overflow: hidden;
 }
 
 div.to-do-list > ul > li > span:first-of-type:hover {
@@ -105,4 +106,41 @@ div.to-do-list > img {
     text-decoration-line: line-through;
     text-decoration-thickness: 0.2rem;
     text-decoration-color: red;
+}
+
+
+/* Responsive Layouts */
+
+/* XS Layout (from 0px to 576px */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 1rem;
+    }
+
+    #app {
+        width: 100%;
+    }
+
+    div.to-do-list > ul,
+    div.to-do-list > div.input-elements {
+        width: 100%;
+    }
+}
+
+/* 2K Layout (from 2560px to 3840px */
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 20px;
+    }
+
+    div.to-do-list > img {
+        width: 25%;
+    }
+}
+
+/* 4K Layout (from 3840px to higher resolutions */
+@media screen and (min-width: 3840px) {
+    html {
+        font-size: 30px;
+    }
 }
