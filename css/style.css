@@ -45,7 +45,6 @@ div.to-do-list > ul {
 }
 
 div.to-do-list > ul > li {
-    margin: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
