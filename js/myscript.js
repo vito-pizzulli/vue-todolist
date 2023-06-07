@@ -33,7 +33,7 @@ createApp ({
             this.toDoList.splice(index, 1);
         },
         toDoTaskAdd() {
-            if (this.toDoTaskNew !== '') {
+            if ((this.toDoTaskNew !== '') && (this.toDoTaskNew.trim().length !== 0)) {
                 taskToAdd = {text: this.toDoTaskNew, done: false};
                 this.toDoList.push(taskToAdd);
                 this.toDoTaskNew = '';
